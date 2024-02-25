@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+  /* ### Primary */
+  --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+
+  /* ### Neutral */
+  --Background: hsl(180, 52%, 96%);
+  --Filter-Tablets: hsl(180, 31%, 95%);
+  --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--Background) !important;
+}
+p{
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .App-main {
+    gap: 4rem !important;
+    /* margin-top: 6rem !important; */
+  }
+  .details {
+    padding-top: 30px;
+  }
+  .details img{
+    position: absolute;
+    top: -45px;
+  }
+  .details .text{
+  padding-left: 0 !important;
+  }
+  .languages {
+    width: 100% !important;
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+  }
+}
+
